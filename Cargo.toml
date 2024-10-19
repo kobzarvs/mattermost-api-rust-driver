@@ -1,0 +1,17 @@
+[package]
+name = "mattermost-api-rust-driver"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Mattermost Client API driver"
+repository = "git@github.com:kobzarvs/mattermost-api-rust-driver.git"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+thiserror = "1.0.64"
+once_cell = "1.20.2"
+tokio = { version = "1.40.0", features = ["full"] }
+futures = "0.3.31"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_derive = "1.0.210"
+serde_json = { version = "1.0.128", optional = true }
