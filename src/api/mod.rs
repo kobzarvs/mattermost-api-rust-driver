@@ -33,7 +33,7 @@ pub enum ApiError {
 
 // Структура для десериализации ответа сервера при ошибке
 #[derive(Deserialize)]
-struct ServerErrorResponse {
+pub struct ServerErrorResponse {
     id: String,
     message: String,
     detailed_error: String,
