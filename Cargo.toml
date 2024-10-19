@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "Mattermost Client API driver"
-repository = "git@github.com:kobzarvs/mattermost-api-rust-driver.git"
+repository = "https://github.com/kobzarvs/mattermost-api-rust-driver.git"
 
 [dependencies]
 reqwest = { version = "0.12", features = ["json", "blocking"] }
