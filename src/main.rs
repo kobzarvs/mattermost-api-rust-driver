@@ -1,9 +1,9 @@
 use std::sync::Arc;
 use once_cell::sync::Lazy;
 use tokio::sync::Mutex;
-use crate::api::ApiClient;
 
-mod api;
+extern crate mattermost_api_rust_driver;
+use mattermost_api_rust_driver::api::ApiClient;
 
 #[tokio::main]
 async fn main() {
